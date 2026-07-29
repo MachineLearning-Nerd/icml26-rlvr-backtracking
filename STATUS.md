@@ -1,6 +1,6 @@
 # STATUS — P3Mnh7mF5a
 
-**State: LOCAL GATE PENDING — all five full-scale finite claims verified.**
+**State: PUBLIC + QUEUED — awaiting shared HF Space drain.**
 
 - Five anchored claims / ten possible points.
 - Pinned arXiv `2606.22938` TeX SHA-256
@@ -10,5 +10,10 @@
 - Exact quotient-chain verifier: C1–C5 pass. Figure-3 dimensions and learning
   rate are reproduced: `W=15`, `K=15`, `L=5`, sign-GD `0.01`; hit time falls
   from `50142` to `900.44`, all transition families exceed `0.99996`.
-- Next: run the fail-closed publication gate, create the public GitHub repo,
-  build the Trackio logbook, then atomically enqueue the canonical HF backlog.
+- Fail-closed gate passed; Trackio logbook has five claim pages, Methods,
+  Negative controls, and a pinned Conclusion. Public repository:
+  `MachineLearning-Nerd/icml26-repro-P3Mnh7mF5a-rlvr-backtracking` at commit
+  `97807db`.
+- Atomically queued in the canonical shared HF backlog. The shared drain is the
+  sole Space publisher; next action is its public Space readback once quota
+  permits.
