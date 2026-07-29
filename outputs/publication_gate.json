@@ -1,0 +1,17 @@
+{
+  "arxiv": "2606.22938",
+  "checks": {
+    "five_anchored_claims_pass": true,
+    "independent_bellman_occupancy_gradient_control": true,
+    "negative_control_per_claim": true,
+    "primary_source_audit_present": true,
+    "source_figure_protocol_reproduced": true,
+    "theory_scope_limitation_explicit": true
+  },
+  "claim_count": 5,
+  "paper": "P3Mnh7mF5a",
+  "publication_eligible": true,
+  "publication_gate_passed": true,
+  "scope": "five source-anchored finite-graph claims; exact CPU quotient-chain checks and public TeX proof anchors",
+  "tests_passed": true
+}

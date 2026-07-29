@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "title": "Repro - Provable Benefits of RLVR over SFT for Reasoning Models",
+  "emoji": "🎯",
+  "space_id": null,
+  "paper": null,
+  "tags": [
+    "icml2026-repro",
+    "paper-P3Mnh7mF5a"
+  ],
+  "updated_at": "2026-07-29T12:38:33+00:00",
+  "root": {
+    "slug": "index",
+    "title": "Repro - Provable Benefits of RLVR over SFT for Reasoning Models",
+    "file": "pages/index.md",
+    "children": [
+      {
+        "slug": "claim-1-golden-path-sft",
+        "title": "Claim 1 — Golden-path SFT",
+        "file": "pages/claim-1-golden-path-sft/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-2-rlvr-backtracking",
+        "title": "Claim 2 — RLVR backtracking",
+        "file": "pages/claim-2-rlvr-backtracking/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-3-inference-separation",
+        "title": "Claim 3 — Inference separation",
+        "file": "pages/claim-3-inference-separation/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-4-search-agent",
+        "title": "Claim 4 — Search agent",
+        "file": "pages/claim-4-search-agent/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-5-trace-distillation",
+        "title": "Claim 5 — Trace distillation",
+        "file": "pages/claim-5-trace-distillation/page.md",
+        "children": []
+      },
+      {
+        "slug": "methods",
+        "title": "Methods",
+        "file": "pages/methods/page.md",
+        "children": []
+      },
+      {
+        "slug": "negative-controls",
+        "title": "Negative controls",
+        "file": "pages/negative-controls/page.md",
+        "children": []
+      },
+      {
+        "slug": "conclusion",
+        "title": "Conclusion",
+        "file": "pages/conclusion/page.md",
+        "children": []
+      }
+    ]
+  },
+  "agent_view_tokens": 1629,
+  "revision": "1785328713289773850"
+}

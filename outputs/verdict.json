@@ -1,0 +1,235 @@
+{
+  "all_five_verified": true,
+  "claim_1_sft": {
+    "final": {
+      "a": 1.0,
+      "b": 0.8333333333333334,
+      "c": 1.0,
+      "d": 0.16666666666666666
+    },
+    "initial": {
+      "a": 0.16666666666666669,
+      "b": 0.8333333333333334,
+      "c": 0.8333333333333334,
+      "d": 0.16666666666666669
+    },
+    "verified": true
+  },
+  "claim_2_rlvr": {
+    "final_minimums": {
+      "a": 0.9999692798819879,
+      "b": 0.9999987711590393,
+      "c": 0.9999987711590393,
+      "d": 0.9999692798819879
+    },
+    "independent_fd_relative_error": 2.7325154306877004e-08,
+    "trace": [
+      {
+        "hitting_time": 50141.99999988535,
+        "min_a": 0.16666666666666669,
+        "min_b": 0.8333333333333334,
+        "min_c": 0.8333333333333334,
+        "min_d": 0.16666666666666669,
+        "step": 0
+      },
+      {
+        "hitting_time": 49658.06333140811,
+        "min_a": 0.1680601890173911,
+        "min_b": 0.8347175964762389,
+        "min_c": 0.8347175964762389,
+        "min_d": 0.1680601890173911,
+        "step": 1
+      },
+      {
+        "hitting_time": 39503.49413886238,
+        "min_a": 0.20433167142798425,
+        "min_b": 0.8652314187135768,
+        "min_c": 0.8652314187135768,
+        "min_d": 0.20433167142798425,
+        "step": 25
+      },
+      {
+        "hitting_time": 20239.88140959322,
+        "min_a": 0.3521874283517516,
+        "min_b": 0.9314665231953944,
+        "min_c": 0.9314665231953944,
+        "min_d": 0.3521874283517516,
+        "step": 100
+      },
+      {
+        "hitting_time": 4177.950127860475,
+        "min_a": 0.8006819620680169,
+        "min_b": 0.9901407588688772,
+        "min_c": 0.9901407588688772,
+        "min_d": 0.8006819620680169,
+        "step": 300
+      },
+      {
+        "hitting_time": 1078.0128335287966,
+        "min_a": 0.9877579639837774,
+        "min_b": 0.9995044952113813,
+        "min_c": 0.9995044952113813,
+        "min_d": 0.9877579639837774,
+        "step": 600
+      },
+      {
+        "hitting_time": 900.4436674889839,
+        "min_a": 0.9999692798819879,
+        "min_b": 0.9999987711590393,
+        "min_c": 0.9999987711590393,
+        "min_d": 0.9999692798819879,
+        "step": 1200
+      }
+    ],
+    "verified": true
+  },
+  "claim_3_separation": {
+    "rlvr_source_optimum": 900.0,
+    "sft_exit_grids": [
+      {
+        "K": 3,
+        "L": 2,
+        "sft_exit": 381.25
+      },
+      {
+        "K": 5,
+        "L": 2,
+        "sft_exit": 7895.0625
+      },
+      {
+        "K": 7,
+        "L": 2,
+        "sft_exit": 160126.765625
+      },
+      {
+        "K": 3,
+        "L": 3,
+        "sft_exit": 644.185185185185
+      },
+      {
+        "K": 5,
+        "L": 3,
+        "sft_exit": 18574.934156378593
+      },
+      {
+        "K": 7,
+        "L": 3,
+        "sft_exit": 528714.9048925467
+      },
+      {
+        "K": 3,
+        "L": 5,
+        "sft_exit": 1580.056
+      },
+      {
+        "K": 5,
+        "L": 5,
+        "sft_exit": 82376.78304
+      },
+      {
+        "K": 7,
+        "L": 5,
+        "sft_exit": 4271082.4727936
+      }
+    ],
+    "two_depth_growth_ratios": {
+      "2": 20.281887017993842,
+      "3": 28.463891200981035,
+      "5": 51.84813384518396
+    },
+    "verified": true
+  },
+  "claim_4_search": {
+    "grid": [
+      {
+        "K": 5,
+        "L": 2,
+        "W": 5,
+        "rlvr_work": 100,
+        "sft_search_work": 75
+      },
+      {
+        "K": 10,
+        "L": 3,
+        "W": 10,
+        "rlvr_work": 400,
+        "sft_search_work": 400
+      },
+      {
+        "K": 15,
+        "L": 5,
+        "W": 15,
+        "rlvr_work": 900,
+        "sft_search_work": 1350
+      },
+      {
+        "K": 20,
+        "L": 7,
+        "W": 20,
+        "rlvr_work": 1600,
+        "sft_search_work": 3200
+      }
+    ],
+    "verified": true
+  },
+  "claim_5_distillation": {
+    "source_figure_target": 900.0,
+    "student_transition_minimum": 0.999999999999,
+    "teacher_transition_minimum": 1.0,
+    "verified": true
+  },
+  "claims": {
+    "C1": {
+      "mechanism": "exact binary-softmax row dynamics on the golden-path support",
+      "negative_control": "backward rows are absent from golden paths and retain pretrained values",
+      "passed": true,
+      "scope": "finite graph transition families; universal convergence remains source-proof anchored",
+      "source": "Theorem 2; Appendix SFT row-wise gradient-flow proof"
+    },
+    "C2": {
+      "mechanism": "exact target/non-target quotient Bellman and occupancy solver plus sign policy-gradient updates",
+      "negative_control": "central finite-difference gradient agrees with independent occupancy/advantage derivative",
+      "passed": true,
+      "scope": "full W=15,K=15,L=5 finite construction at source lr 0.01; theorem proof is source anchored",
+      "source": "Theorem 3; Appendix RLVR G-sign dynamics; Figure 3 protocol"
+    },
+    "C3": {
+      "mechanism": "direct execution of the published SFT exit recurrence across W/K/L grids",
+      "negative_control": "RLVR stays at source optimum 4WK=900 while the SFT recurrence grows geometrically",
+      "passed": true,
+      "scope": "finite recurrence witnesses the asymptotic separation, not a replacement proof",
+      "source": "Theorem 4 and Appendix inference recurrence"
+    },
+    "C4": {
+      "mechanism": "explicit W*K*(L+1) work accounting under rejected revisits",
+      "negative_control": "without duplicate avoidance, the SFT exit recurrence remains exponential",
+      "passed": true,
+      "scope": "checks W,K,L scaling; constants are not asserted beyond the source Theta claim",
+      "source": "Corollary 1 and duplicate-state rejection argument"
+    },
+    "C5": {
+      "mechanism": "teacher trace support contains every desired forward/backward transition, so row-wise SFT inherits it",
+      "negative_control": "golden-only SFT omits the backward transition support",
+      "passed": true,
+      "scope": "finite transition support and Figure-3 4WK target; universal proof is source anchored",
+      "source": "Theorem 5 and Appendix distillation proof"
+    }
+  },
+  "negative_controls": {
+    "finite_difference_agrees_with_exact_policy_gradient": true,
+    "golden_only_backward_frozen": true,
+    "no_duplicate_search_does_not_claim_linear_work": true
+  },
+  "paper": "P3Mnh7mF5a",
+  "protocol": {
+    "K": 15,
+    "L": 5,
+    "W": 15,
+    "sign_gd_lr": 0.01,
+    "steps": 1200
+  },
+  "source": {
+    "arxiv": "2606.22938",
+    "sha256": "2cb8102f2468aabd83a54b187cc7c87ba8f120946053e8c260d0c2d6a198f7b4"
+  }
+}

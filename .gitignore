@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+.trackio/logbook/.sync_lock
+.trackio/logbook/.sync_pending
+.trackio/logbook/.sync.log
