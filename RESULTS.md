@@ -1,22 +1,20 @@
 # Results
 
-Run the complete CPU reproduction from this directory:
+The source-faithful CPU reproduction passes all five anchored claims. This is
+finite evidence for the paper’s construction, not a replacement for its
+universal theorem proofs.
 
-```bash
-OPENBLAS_NUM_THREADS=1 .venv/bin/python repro/src/verify.py
-.venv/bin/python repro/src/publication_gate.py
-```
+| Claim | Executable evidence | Negative control | Result |
+|---|---|---|---|
+| C1 — golden-path SFT | Forward rows `a,c` converge to one; backward rows `b,d` retain pretrained values. | Golden paths never contain the backward rows. | PASS |
+| C2 — RLVR learns backtracking | At `W=15,K=15,L=5`, sign-GD reduces hitting time `50142→900.4437`; minimum transition probability is `0.999969`. | Independent central finite differences agree with the occupancy/advantage derivative to `2.73e-8`. | PASS |
+| C3 — inference separation | Published SFT exit recurrence grows geometrically over the tested `K/L` grid; RLVR source optimum is `4WK=900`. | SFT recurrence grows while RLVR remains linear in `WK`. | PASS |
+| C4 — duplicate-state search | Work accounting compares `W*K*(L+1)` for SFT with `4*W*K` for RLVR. | Without duplicate prevention, the SFT exit recurrence remains exponential. | PASS |
+| C5 — trace distillation | Teacher traces contain all desired forward/backward transitions; student inherits them. | Golden-only traces omit backward-transition support. | PASS |
 
-All five anchored claims pass. Structured raw evidence is in [`outputs/verdict.json`](outputs/verdict.json).
+Structured raw evidence is in [`outputs/verdict.json`](outputs/verdict.json),
+and the fail-closed result is in
+[`outputs/publication_gate.json`](outputs/publication_gate.json).
 
-| Claim | Executable evidence | Negative control |
-|---|---|---|
-| C1 — golden-path SFT | Exact row-wise dynamics makes `a,c→1`, while `b,d` retain pretraining values | Backward rows never occur in golden paths |
-| C2 — RLVR learns backtracking | Exact `W=15,K=15,L=5`, 0.01 sign-GD quotient solver: `50142→900.44`; every family exceeds `0.99996` | Central finite-difference gradients agree with occupancy/advantage derivatives (`2.8e-8`) |
-| C3 — inference separation | Published SFT exit recurrence over `K∈{3,5,7}`, `L∈{2,3,5}`; RLVR source optimum is `4WK=900` | SFT recurrence grows geometrically while RLVR remains linear |
-| C4 — duplicate-state search | Corollary work accounting grows as `Θ(WKL)` for SFT versus `Θ(WK)` for RLVR | Without duplicate prevention SFT retains the exponential exit recurrence |
-| C5 — RLVR-trace distillation | Teacher traces support each desired forward/backward transition, so row-wise SFT inherits `Θ(WK)` | Golden-only traces omit backward transitions |
-
-## Scope
-
-This is a source-faithful theory/synthetic reproduction. The executable code solves the finite Markov construction and reproduces the Figure-3 setting, but finite grids are not presented as a new proof of universal `Θ` statements; those remain anchored to the primary-source proofs in the source audit.
+No live evaluator score is recorded in this repository yet; the publication
+status remains public and queued.
