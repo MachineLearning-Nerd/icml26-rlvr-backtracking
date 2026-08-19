@@ -4,6 +4,17 @@ Independent CPU reproduction for [arXiv:2606.22938](https://arxiv.org/abs/2606.2
 “Provable Benefits of RLVR over SFT for Reasoning Models: Learning to
 Backtrack Efficiently,” by Stanley Wei and Juno Kim.
 
+## Audit record
+
+Overall status:
+`ALL_FIVE_CLAIMS_VERIFIED_SCOPED_FINITE_AUDIT_NO_LIVE_SCORE`.
+
+The standardized claim ledger is [`CLAIM_EVIDENCE.md`](CLAIM_EVIDENCE.md), the
+source/version record is [`SOURCE_AUDIT.md`](SOURCE_AUDIT.md), and the final
+branch/identity check is [`verify_final.py`](verify_final.py).
+`current_score_claim=false`, `publication_allowed=false`, and
+`official_author_endorsement=false`.
+
 ## Result at a glance
 
 The repository’s publication gate passes all **five anchored claims** in a

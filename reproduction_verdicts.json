@@ -1,0 +1,19 @@
+{
+  "schema_version": "1",
+  "overall_status": "ALL_FIVE_CLAIMS_VERIFIED_SCOPED_FINITE_AUDIT_NO_LIVE_SCORE",
+  "source_scope": "arXiv:2606.22938",
+  "cumulative_evidence": "PASS_FINITE_SCOPED_AUDIT",
+  "claims": {
+    "C1": "VERIFIED_SCOPED",
+    "C2": "VERIFIED_SCOPED",
+    "C3": "VERIFIED_SCOPED",
+    "C4": "VERIFIED_SCOPED",
+    "C5": "VERIFIED_SCOPED"
+  },
+  "historical_score": null,
+  "current_score_claim": false,
+  "publication_gate_passed": true,
+  "publication_allowed": false,
+  "official_author_endorsement": false,
+  "boundary": "Finite source-faithful checks validate mechanisms and controls but do not replace the universal asymptotic proofs."
+}

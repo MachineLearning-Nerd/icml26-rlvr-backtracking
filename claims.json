@@ -1,0 +1,38 @@
+{
+  "schema_version": "1",
+  "paper": "Provable Benefits of RLVR over SFT for Reasoning Models: Learning to Backtrack Efficiently",
+  "paper_source": "arXiv:2606.22938",
+  "overall_status": "ALL_FIVE_CLAIMS_VERIFIED_SCOPED_FINITE_AUDIT_NO_LIVE_SCORE",
+  "claims": [
+    {
+      "id": "C1",
+      "status": "VERIFIED_SCOPED",
+      "evidence": "repro/src/verify.py:sft_values; outputs/verdict.json",
+      "claim_page": "CLAIM_EVIDENCE.md#c1-golden-path-sft-does-not-learn-backtracking"
+    },
+    {
+      "id": "C2",
+      "status": "VERIFIED_SCOPED",
+      "evidence": "repro/src/verify.py:QuotientChain; outputs/verdict.json",
+      "claim_page": "CLAIM_EVIDENCE.md#c2-rlvr-learns-backtracking"
+    },
+    {
+      "id": "C3",
+      "status": "VERIFIED_SCOPED",
+      "evidence": "repro/src/verify.py:sft_exit_recurrence; outputs/verdict.json",
+      "claim_page": "CLAIM_EVIDENCE.md#c3-inference-time-separation"
+    },
+    {
+      "id": "C4",
+      "status": "VERIFIED_SCOPED",
+      "evidence": "repro/src/verify.py:search_grid; outputs/verdict.json",
+      "claim_page": "CLAIM_EVIDENCE.md#c4-duplicate-state-search-scaling"
+    },
+    {
+      "id": "C5",
+      "status": "VERIFIED_SCOPED",
+      "evidence": "repro/src/verify.py:teacher/student transition support; outputs/verdict.json",
+      "claim_page": "CLAIM_EVIDENCE.md#c5-rlvr-trace-distillation-transfers-backtracking"
+    }
+  ]
+}

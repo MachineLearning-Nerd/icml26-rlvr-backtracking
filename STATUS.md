@@ -2,6 +2,22 @@
 
 **State: public and queued; no live evaluator score claimed.**
 
+## Standard audit record
+
+`ALL_FIVE_CLAIMS_VERIFIED_SCOPED_FINITE_AUDIT_NO_LIVE_SCORE`
+
+| Gate | Value |
+| --- | --- |
+| Publication gate | `passed` |
+| Current score claim | `false` |
+| Publication authorization | `false` |
+| Official author endorsement | `false` |
+| Evidence level | Finite, source-faithful CPU audit |
+
+The five claims pass their explicit finite contracts and controls. The
+repository does not turn those checks into replacement proofs of the paper's
+universal asymptotic statements.
+
 - Paper: [arXiv:2606.22938](https://arxiv.org/abs/2606.22938)
 - Authors: Stanley Wei and Juno Kim
 - Five anchored claims / ten possible points

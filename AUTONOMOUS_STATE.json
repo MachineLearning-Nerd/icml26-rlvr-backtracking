@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "paper_source": "arXiv:2606.22938",
+  "openreview_id": "P3Mnh7mF5a",
+  "phase": "published_queued_without_live_score",
+  "overall_status": "ALL_FIVE_CLAIMS_VERIFIED_SCOPED_FINITE_AUDIT_NO_LIVE_SCORE",
+  "next_action": "await_live_evaluator_without_claiming_score",
+  "current_score_claim": false,
+  "publication_allowed": false,
+  "official_author_endorsement": false,
+  "publication_gate_passed": true,
+  "branch_count": 1,
+  "repository_identity": {
+    "owner": "MachineLearning-Nerd",
+    "canonical_email": "MachineLearning-Nerd@users.noreply.github.com",
+    "recovery_bundle_sha256": "54ffe57bc412e9b2528d83e8f1bfc1643ceb2276ac50e757bc93a5e5d9f4d8e3"
+  },
+  "github_repository": "https://github.com/MachineLearning-Nerd/icml26-rlvr-backtracking"
+}

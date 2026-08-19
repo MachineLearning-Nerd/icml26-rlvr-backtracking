@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this reproduction or audit, please cite this repository and the original paper."
+type: software
+title: "Independent reproduction of Provable Benefits of RLVR over SFT for Reasoning Models"
+version: "1.0.0"
+date-released: 2026-08-19
+authors:
+  - name: MachineLearning-Nerd
+repository-code: "https://github.com/MachineLearning-Nerd/icml26-rlvr-backtracking"
+url: "https://github.com/MachineLearning-Nerd/icml26-rlvr-backtracking"
+abstract: "Finite source-faithful CPU reproduction of RLVR backtracking claims with explicit controls and scopes."
+keywords:
+  - RLVR
+  - supervised fine-tuning
+  - reasoning models
+  - backtracking
+  - reproduction
+preferred-citation:
+  type: article
+  title: "Provable Benefits of RLVR over SFT for Reasoning Models: Learning to Backtrack Efficiently"
+  authors:
+    - family-names: Wei
+      given-names: Stanley
+    - family-names: Kim
+      given-names: Juno
+  year: 2026
+  url: "https://arxiv.org/abs/2606.22938"

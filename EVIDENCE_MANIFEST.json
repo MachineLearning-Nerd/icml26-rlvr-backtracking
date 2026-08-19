@@ -1,0 +1,38 @@
+{
+  "schema_version": "1",
+  "paper_source": "arXiv:2606.22938",
+  "overall_status": "ALL_FIVE_CLAIMS_VERIFIED_SCOPED_FINITE_AUDIT_NO_LIVE_SCORE",
+  "required_evidence": [
+    "README.md",
+    "STATUS.md",
+    "CLAIM_EVIDENCE.md",
+    "SOURCE_AUDIT.md",
+    "docs/SOURCE_AUDIT.md",
+    "ENVIRONMENT.md",
+    "REPORT.md",
+    "branch-audit.md",
+    "repro/src/verify.py",
+    "repro/src/publication_gate.py",
+    "outputs/verdict.json",
+    "outputs/publication_gate.json",
+    "claims.json",
+    "reproduction_verdicts.json",
+    "AUTONOMOUS_STATE.json",
+    "CITATION.cff",
+    "AUTHOR_THANK_YOU.md",
+    "verify_final.py"
+  ],
+  "controls": {
+    "source_anchors": true,
+    "negative_controls": true,
+    "finite_markov_quotient": true,
+    "publication_gate_passed": true,
+    "live_score_claimed": false,
+    "language_model_trained": false,
+    "external_data_used": false,
+    "gpu_used": false
+  },
+  "source_hashes": {
+    "pinned_tex": "2cb8102f2468aabd83a54b187cc7c87ba8f120946053e8c260d0c2d6a198f7b4"
+  }
+}
